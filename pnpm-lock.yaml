@@ -17,6 +17,9 @@ importers:
       '@ai-sdk/react':
         specifier: ^1.1.23
         version: 1.1.23(react@19.0.0-rc-45804af1-20241021)(zod@3.23.8)
+      '@ai-sdk/xai':
+        specifier: ^1.1.15
+        version: 1.1.15(zod@3.23.8)
       '@codemirror/lang-javascript':
         specifier: ^6.2.2
         version: 6.2.2
@@ -309,6 +312,12 @@ packages:
     peerDependenciesMeta:
       zod:
         optional: true
+
+  '@ai-sdk/xai@1.1.15':
+    resolution: {integrity: sha512-Uuc6NC4xsNF5KyYivf/9egWEBNNZ0s3nnQ2klWLj0k9gu5h9fuGAto5thhp2Rd50cPMWzQVQ7R5zvYHmfiunWA==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      zod: ^3.0.0
 
   '@alloc/quick-lru@5.2.0':
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
@@ -3848,6 +3857,13 @@ snapshots:
       '@ai-sdk/provider-utils': 2.1.13(zod@3.23.8)
       zod-to-json-schema: 3.24.1(zod@3.23.8)
     optionalDependencies:
+      zod: 3.23.8
+
+  '@ai-sdk/xai@1.1.15(zod@3.23.8)':
+    dependencies:
+      '@ai-sdk/openai-compatible': 0.1.15(zod@3.23.8)
+      '@ai-sdk/provider': 1.0.11
+      '@ai-sdk/provider-utils': 2.1.13(zod@3.23.8)
       zod: 3.23.8
 
   '@alloc/quick-lru@5.2.0': {}
